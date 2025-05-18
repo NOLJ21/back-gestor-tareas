@@ -4,7 +4,7 @@ const app = express();
 require('dotenv').config();
 
 app.use(cors({
-  origin: 'https://front-gestor-tareas.vercel.app/'
+  origin: 'https://front-gestor-tareas-j5th.vercel.app/'
 }));
 app.use(express.json());
 
