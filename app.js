@@ -3,7 +3,9 @@ const cors = require('cors');
 const app = express();
 require('dotenv').config();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://front-gestor-tareas.vercel.app/'
+}));
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth.routes'));
